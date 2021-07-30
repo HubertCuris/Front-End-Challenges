@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+body{
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 16px;
+  color: hsl(204, 43%, 93%);
+  background-color: #E6EFF6;
+  font-family: karla;
+}
+#windowContainer{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 60px 20px;
+}
+#gridWindow{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.8fr 0.7fr;
+  grid-template-areas: 
+  "Top"
+  "Left"
+  "Right";
+  border-radius: 7px;
+  box-shadow: 0 0 26px #2a68683b;
+}
+#gridWindow div:first-child{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#gridWindow div:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#windowTop, #windowBLeft, #windowBRight{
+  padding: 10px 25px;
+}
+#windowTop{
+  grid-area: Top;
+  background-color: #fff;
+}
+h1{
+  color: hsl(179, 62%, 43%);
+}
+h2{
+  color: hsl(71, 73%, 54%);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.topText{
+  color: hsl(218, 22%, 67%);
+  line-height: 30px;
+}
+#windowBLeft{
+  grid-area: Left;
+  background-color: hsl(179, 62%, 43%);
+}
+#price{
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 30px;
+  color: hsl(204, 43%, 93%);
+  vertical-align: middle;
+  margin-bottom: -5px;
+}
+#priceText{
+  color: hsla(203, 44%, 93%, 0.548);
+}
+button{
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 6px #00000031;
+  margin-top: 10px;
+}
+a > button{
+  text-decoration: none;
+  color: hsl(204, 43%, 93%);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+#windowBRight{
+  grid-area: Right;
+  background-color: #4ABEBD;
+}
+#textWhyUs{
+  color: hsla(203, 44%, 93%, 0.589);
+  line-height: 20px;
+}
+
+@media screen and (min-width: 768px){ 
+  #windowContainer{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  #gridWindow{
+    width: 635px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 1fr;
+    grid-template-areas: 
+    "Top Top"
+    "Left Right";
+    overflow: hidden;
+    padding: 0;
+  }
+  #windowTop, #windowBLeft, #windowBRight{
+    padding: 20px 40px;
+  }
+  #textWhyUs{
+    font-size: 14px;
+  }
+  #gridWindow div:first-child{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  #gridWindow div:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
