@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*, body{
+  margin: 0;
+}
+body{
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background: hsl(257, 40%, 49%) url(./images/bg-mobile.svg) no-repeat;
+  padding: 40px;
+  color: white;
+}
+#logo{
+  width: 120px;
+  margin-bottom: 45px;
+}
+main{
+  text-align: center;
+}
+#illustration{
+  width: 100%;
+}
+#containerDescription{
+  margin-top: 40px;
+}
+h2{
+  font-family: 'Poppins';
+  font-size: 20px;
+  letter-spacing: 0.3px;
+  padding: 20px;
+}
+#description{
+  font-size: 14px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  line-height: 25px;
+  padding: 15px;
+  color: #E8DDF9;
+}
+a{
+  text-decoration: none; 
+}
+button{
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 45%);
+  height: 35px;
+  width: 170px;
+  font-size: 12px;
+}
+button:hover{
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+footer{
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+}
+.containerSVG{
+  display: flex;
+  justify-content: center;
+  width: 12px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 6px;
+  margin: 5px;
+}
+/* footer > div > img:hover{
+  background-color: hsl(300, 69%, 71%);
+} */
+footer > div > img{
+  height: 12px;
+}
+@media screen and (min-width: 1440px) {
+  body{
+    padding: 60px;
+    padding-left: 100px;
+    background: hsl(257, 40%, 49%) url(./images/bg-desktop.svg) no-repeat;
+    background-size: contain;
+    height: 100vh;
+  }
+  #logo{
+    width: 200px;
+    margin-top: -20px;
+    margin-bottom: 60px;
+  }
+  main{
+    display: flex;
+    text-align: left;
+  }
+  #containerIllustration, #containerDescription{
+    display: block;
+  }
+  #containerIllustration{
+    width: 60%;
+  }
+  #illustration{
+    width: 80%;
+  }
+  #containerDescription{
+    width: 40%;
+    padding-top: 50px;
+    margin: 0;
+    margin-left: -50px;
+  }
+  h2{
+    font-size: 35px;
+    width: 80%;
+  }
+  #description{
+    font-size: 16px;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  h2, #description{
+    padding: 0
+  }
+  button{
+    border-radius: 25px;
+    height: 50px;
+    width: 175px;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 45%), -1px -1px 1px rgba(0, 0, 0, 45%) ;
+  }
+  footer{
+    margin-top: 0;
+    justify-content: center;
+    margin-left: 1000px;
+  }
+  .containerSVG{
+    width: 18px;
+    padding: 8px;
+    margin: 7px;
+  }
+  footer > div > img{
+    height: 18px;
+  }
+}
